@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAT81 | Data-Driven HIIT & Heart-Rate Monitored Workouts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.97); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .animate-fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-scale-in {
+            opacity: 0;
+            animation: scaleIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .delay-0 { animation-delay: 0ms; }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+
+        .text-balance { text-wrap: balance; }
+        
+        /* Custom font smoothing for that crisp editorial look */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-white text-black font-sans selection:bg-black selection:text-white overflow-x-hidden">
+
+    <div class="px-4 py-4 md:px-6 md:py-6 max-w-[1800px] mx-auto w-full">
+        
+        <!-- Navigation -->
+        <nav class="grid grid-cols-2 md:grid-cols-12 gap-4 text-[14px] leading-none tracking-tight animate-fade-in delay-0">
+            <div class="col-span-1 md:col-span-3">
+                <a href="#" class="hover:opacity-70 transition-opacity duration-200">BEAT81</a>
+            </div>
+            <div class="hidden md:block md:col-span-2">
+                <a href="#" class="hover:opacity-70 transition-opacity duration-200">Workouts</a>
+            </div>
+            <div class="hidden md:block md:col-span-4">
+                <a href="#" class="hover:opacity-70 transition-opacity duration-200">Our Story</a>
+            </div>
+            <div class="hidden md:block md:col-span-2">
+                <a href="#" class="hover:opacity-70 transition-opacity duration-200">Find a Studio</a>
+            </div>
+            <div class="col-span-1 md:col-span-1 text-right">
+                <a href="#" class="hover:opacity-70 transition-opacity duration-200">Join Now</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="mt-[20vh] md:mt-[28vh] mb-[15vh] md:mb-[22vh]">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                <h1 class="col-span-1 md:col-span-9 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] leading-tight tracking-tight font-normal text-balance animate-fade-in-up delay-100">
+                    We are a technology-led fitness community delivering high-intensity heart-rate monitored group classes. By combining professional coaching with real-time data, we help you push your limits, overcome plateaus, and track your progress in real-time.
+                </h1>
+            </div>
+        </main>
+
+        <!-- First Project (Hero Viewport Context) -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-x-4 gap-y-3 pb-20">
+            
+            <!-- Project Meta -->
+            <div class="col-span-1 md:col-start-4 md:col-span-2 text-[14px] leading-snug tracking-tight animate-fade-in-up delay-200">
+                The BEAT81 Method
+            </div>
+            <div class="col-span-1 md:col-start-6 md:col-span-7 text-[14px] leading-relaxed tracking-tight text-[#374151] text-pretty max-w-2xl animate-fade-in-up delay-200 mb-2 md:mb-0">
+                Science-backed HIIT sessions across Ride, Build, Burn, and Hybrid formats. High-performance mental conditioning meets community-driven accountability and real-time performance tracking.
+            </div>
+
+            <!-- Project Image -->
+            <div class="col-span-1 md:col-start-4 md:col-span-9 animate-scale-in delay-300">
+                <div class="relative w-full overflow-hidden bg-[#f0f0f0]">
+                    <img 
+                        src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/cff92e7b-4f14-4d16-b084-6e6947ff15fc/hero-2-img-0-1781418064802.png" 
+                        alt="BEAT81 high-intensity group training session with heart-rate monitoring technology" 
+                        class="w-full h-auto object-cover block hover:scale-[1.02] transition-transform duration-700 ease-out"
+                    />
+                </div>
+            </div>
+            
+        </section>
+
+    </div>
+
+</body>
+</html>
